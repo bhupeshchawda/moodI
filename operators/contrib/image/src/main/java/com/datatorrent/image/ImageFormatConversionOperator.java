@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2012-2017 DataTorrent, Inc.
  * All Rights Reserved.
  * The use of this source code is governed by the Limited License located at
@@ -7,14 +7,14 @@
 
 package com.datatorrent.image;
 
-import java.awt.HeadlessException;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+
 import javax.imageio.ImageIO;
 import javax.validation.constraints.NotNull;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import ij.IJ;
 import ij.ImagePlus;
 import ij.io.Opener;

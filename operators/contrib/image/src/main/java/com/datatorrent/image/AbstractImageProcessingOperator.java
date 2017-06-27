@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2012-2017 DataTorrent, Inc.
  * All Rights Reserved.
  * The use of this source code is governed by the Limited License located at
@@ -12,9 +12,9 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
 import javax.imageio.ImageIO;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import com.datatorrent.api.DefaultInputPort;
 import com.datatorrent.api.DefaultOutputPort;
 import com.datatorrent.common.util.BaseOperator;

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<configuration>
+  <property>
+    <name>dt.application.ImageConversionCompressionResize.operator.ImageReader.prop.directory</name>
+    <value>Enter input directory here</value>
+  </property>
+  <property>
+    <name>dt.application.ImageConversionCompressionResize.operator.ImageWriter.prop.filePath</name>
+    <value>Enter output directory here</value>
+  </property>
+  <property>
+    <name>dt.application.ImageConversionCompressionResize.operator.ConvertToJpeg.prop.toFileType</name>
+    <value>jpg</value>
+  </property>
+  <property>
+    <name>dt.application.ImageConversionCompressionResize.operator.CompressImage.prop.compressionRatio</name>
+    <value>0.9</value>
+  </property>
+  <property>
+    <name>dt.application.ImageConversionCompressionResize.operator.ResizeImage.prop.scale</name>
+    <value>0.5</value>
+  </property>
+  <property>
+    <name>dt.application.ImageConversionCompressionResize.operator.ImageReader.prop.slowDownMills</name>
+    <value>1000</value>
+  </property>
+</configuration>

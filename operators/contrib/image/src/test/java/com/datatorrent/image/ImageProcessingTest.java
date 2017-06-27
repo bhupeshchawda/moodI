@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2012-2017 DataTorrent, Inc.
  * All Rights Reserved.
  * The use of this source code is governed by the Limited License located at
@@ -6,10 +6,10 @@
  */
 
 package com.datatorrent.image;
+
 /**
  * Tests for basic image processing operators.
  */
-
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -20,9 +20,9 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.apache.commons.io.FileUtils;
+import org.apache.hadoop.classification.InterfaceStability;
 
-
-@org.apache.hadoop.classification.InterfaceStability.Evolving
+@InterfaceStability.Evolving
 public class ImageProcessingTest extends ImageResizeOperator
 {
   private Data data = new Data();

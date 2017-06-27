@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2012-2017 DataTorrent, Inc.
  * All Rights Reserved.
  * The use of this source code is governed by the Limited License located at
@@ -10,15 +10,13 @@ package com.datatorrent.image;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Iterator;
+
 import javax.imageio.IIOImage;
 import javax.imageio.ImageIO;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
 import javax.imageio.stream.MemoryCacheImageOutputStream;
 import javax.validation.constraints.NotNull;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * This Operator can be used to compress lossy images (example: jpeg).

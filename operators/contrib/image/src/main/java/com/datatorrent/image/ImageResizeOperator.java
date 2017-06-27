@@ -1,18 +1,10 @@
-/*
+/**
  * Copyright (c) 2012-2017 DataTorrent, Inc.
  * All Rights Reserved.
  * The use of this source code is governed by the Limited License located at
  * https://www.datatorrent.com/datatorrent-openview-software-license/
  */
-
 package com.datatorrent.image;
-
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import net.coobird.thumbnailator.Thumbnails;
 
 /**
  * This operator can be used to resize an image to the desired resolution be specifying
@@ -75,21 +67,13 @@ public class ImageResizeOperator extends AbstractImageProcessingOperator
     this.height = height;
   }
 
+  /**
+   * TODO: Implement resize
+   * @param data
+   */
   protected void resize(Data data)
   {
-    try {
-      bufferedImage = byteArrayToBufferedImage(data.bytesImage);
-      BufferedImage resizedImage;
-      if (height == width && width == 0) {
-        resizedImage = Thumbnails.of(bufferedImage).scale(scale).asBufferedImage();
-      } else {
-        resizedImage = Thumbnails.of(bufferedImage).size(width, height).asBufferedImage();
-      }
-      data.bytesImage = bufferedImageToByteArray(resizedImage,data.imageType);
-      output.emit(data);
-    } catch (IOException e) {
-      throw new RuntimeException("Error image not available to Thumbnails.of() " + e);
-    }
+    output.emit(data);
   }
 
   @Override
