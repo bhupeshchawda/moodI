@@ -15,7 +15,7 @@
   </parent>
   <artifactId>kafka-to-kafka-filter-transform</artifactId>
   <name>Kafka to Kafka  Filter Transform App</name>
-  <version>0.11.0</version>
+  <version>0.12.0</version>
   <description>Ingest data from kafka, process it and write back to kafka.</description>
 
   <properties>

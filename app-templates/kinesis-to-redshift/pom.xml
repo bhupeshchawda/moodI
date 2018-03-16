@@ -16,7 +16,7 @@
   </parent>
 
   <groupId>com.datatorrent.apps</groupId>
-  <version>0.11.0</version>
+  <version>0.12.0</version>
   <artifactId>kinesis-to-redshift</artifactId>
   <packaging>jar</packaging>
 
